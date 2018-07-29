@@ -1,4 +1,4 @@
-package com.kusskussgang.uniamoci.SingUpFragmentForm;
+package com.kusskussgang.uniamoci.SingUpForm;
 
 
 import android.os.Bundle;
@@ -12,12 +12,10 @@ import com.kusskussgang.uniamoci.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FirstPageForm extends Fragment {
-
-    public static final String TAG = "FIRSTPAGEFORM";
+public class SecondPageForm extends Fragment {
 
 
-    public FirstPageForm() {
+    public SecondPageForm() {
         // Required empty public constructor
     }
 
@@ -26,7 +24,7 @@ public class FirstPageForm extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.first_page_form, container, false);
+        return inflater.inflate(R.layout.second_page_form, container, false);
     }
 
 }

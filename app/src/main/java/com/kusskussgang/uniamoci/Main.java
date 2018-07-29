@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.kusskussgang.uniamoci.SingUpFragmentForm.SingUp;
+import com.kusskussgang.uniamoci.SingUpForm.SingUp;
 
 public class Main extends AppCompatActivity implements View.OnClickListener
 {
@@ -28,6 +28,17 @@ public class Main extends AppCompatActivity implements View.OnClickListener
         {
             Intent TOSIGNUP = new Intent(this, SingUp.class);
             startActivity(TOSIGNUP);
+        }
+
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        if (getFragmentManager().getBackStackEntryCount() > 0){
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
         }
 
     }
